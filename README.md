@@ -2,6 +2,10 @@
 
 This repository contains examples of coding interview questions and solutions in JavaScript/TypeScript. The purpose of this repository is to help you understand how to solve coding interview questions and learn data structures and algorithms.
 
+## Content
+
+- [Big O Notation](01-Big-O-Notation/README.md)
+
 ## Resources
 
 - [ZTM Cheat Sheet](https://zerotomastery.io/cheatsheets/data-structures-and-algorithms-cheat-sheet/#hash-tables)
