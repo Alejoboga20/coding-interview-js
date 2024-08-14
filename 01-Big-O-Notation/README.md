@@ -42,6 +42,30 @@ function findElement(arr, elem) {
 }
 ```
 
+```python
+def find_element(arr, elem):
+  for i in range(len(arr)):
+    if arr[i] == elem:
+      print(f'Element: {elem} found at index: {i}')
+```
+
+## Big O Notation: O(1) - Constant Time Complexity
+
+**O(1)** describes an algorithm that will always execute in the same time regardless of the size of the input data set. The time it takes to run the algorithm will remain constant.
+
+```javascript
+function logFirstElement(arr) {
+	console.log(arr[0]);
+}
+```
+
+```python
+def print_first_element(arr):
+  print(arr[0])
+```
+
+**Inputs can be any type of data, it's not restricted to arrays.**
+
 ## Resources
 
 - [ZTM Cheat Sheet](https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent)
