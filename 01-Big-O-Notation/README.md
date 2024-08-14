@@ -66,6 +66,27 @@ def print_first_element(arr):
 
 **Inputs can be any type of data, it's not restricted to arrays.**
 
+## Big O Rules
+
+1. **Worst Case**: We need to consider the worst-case scenario when analyzing the efficiency of an algorithm.
+
+```javascript
+const inputArray = ['Dora', 'Boots', 'Diego', 'Nemo', 'Swiper', 'Map', 'Backpack'];
+
+function findNemo(arrayOfNames) {
+	for (let i = 0; i < arrayOfNames.length; i++) {
+		if (arrayOfNames[i] === 'Nemo') {
+			console.log('Found Nemo!');
+			break;
+		}
+	}
+}
+
+findNemo(inputArray);
+```
+
+Even though the function above has a break statement, we need to consider the worst-case scenario where 'Nemo' is the last element in the array.
+
 ## Resources
 
 - [ZTM Cheat Sheet](https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent)
