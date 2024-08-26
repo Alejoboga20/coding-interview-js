@@ -166,6 +166,10 @@ function printAllNumbersThenAllPairSums(numbers) {
 // O(n + n^2) = O(n^2)
 ```
 
+## Space Complexity
+
+Space complexity is a way to describe the amount of memory an algorithm takes in terms of the amount of input data.
+
 ## Cheat Sheet
 
 ```
@@ -197,8 +201,10 @@ Rule 3: Different inputs should have different variables. O(a+b). A and B arrays
 
 ### What causes Space complexity?
 
-Variables
-Data Structures Function Call Allocations
+- Variables
+- Data Structures
+- Function Call
+- Allocations
 
 ## Resources
 
