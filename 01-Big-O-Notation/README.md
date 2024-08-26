@@ -87,6 +87,30 @@ findNemo(inputArray);
 
 Even though the function above has a break statement, we need to consider the worst-case scenario where 'Nemo' is the last element in the array.
 
+2. **Remove Constants**: We don't need to consider constants when analyzing the efficiency of an algorithm.
+
+```javascript
+function printFirstItemThenFirstHalfThenSayHi100Times(items) {
+	console.log(items[0]); // O(1)
+
+	const middleIndex = Math.floor(items.length / 2); // O(1)
+	let index = 0; // O(1)
+
+	while (index < middleIndex) {
+		// O(n/2)
+		console.log(items[index]);
+		index++;
+	}
+
+	for (let i = 0; i < 100; i++) {
+		// O(100)
+		console.log('Hi');
+	}
+}
+
+// O(1 + 1 + 1 + n/2 + 100) = O(103 + n/2) = O(n)
+```
+
 ## Resources
 
 - [ZTM Cheat Sheet](https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent)
