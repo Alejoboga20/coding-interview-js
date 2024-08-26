@@ -145,6 +145,27 @@ function logAllPairsOfArray(array = []) {
 // O(n * n) = O(n^2) - Quadratic Time Complexity
 ```
 
+4. **Drop Non-Dominant Terms**: We need to drop non-dominant terms when analyzing the efficiency of an algorithm.
+
+```javascript
+function printAllNumbersThenAllPairSums(numbers) {
+	// O(n)
+	console.log('These are the numbers:');
+	numbers.forEach((number) => {
+		console.log(number);
+	});
+
+	// O(n^2)
+	console.log('And these are their sums:');
+	numbers.forEach((firstNumber) => {
+		numbers.forEach((secondNumber) => {
+			console.log(firstNumber + secondNumber);
+		});
+	});
+}
+// O(n + n^2) = O(n^2)
+```
+
 ## Resources
 
 - [ZTM Cheat Sheet](https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent)
