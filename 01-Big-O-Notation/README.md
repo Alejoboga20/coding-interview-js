@@ -168,7 +168,7 @@ function printAllNumbersThenAllPairSums(numbers) {
 
 ## Space Complexity
 
-Space complexity is a way to describe the amount of memory an algorithm takes in terms of the amount of input data.
+Space complexity is a way to describe the amount of memory an algorithm takes in terms of the amount of input data. To calculate the space complexity of an algorithm, we need to consider the amount of space used by the algorithm in terms of the size of the input data set.
 
 ## Cheat Sheet
 
