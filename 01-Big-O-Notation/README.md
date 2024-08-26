@@ -111,6 +111,24 @@ function printFirstItemThenFirstHalfThenSayHi100Times(items) {
 // O(1 + 1 + 1 + n/2 + 100) = O(103 + n/2) = O(n)
 ```
 
+3. **Different terms for inputs**: We need to consider different terms for inputs when analyzing the efficiency of an algorithm.
+
+```javascript
+function compressBoxesTwice(boxes, boxes2) {
+	// O(n)
+	boxes.forEach((box) => {
+		console.log(box);
+	});
+
+	// O(m)
+	boxes2.forEach((box) => {
+		console.log(box);
+	});
+}
+
+// O(n + m)
+```
+
 ## Resources
 
 - [ZTM Cheat Sheet](https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent)
