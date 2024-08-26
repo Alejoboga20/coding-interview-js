@@ -126,7 +126,23 @@ function compressBoxesTwice(boxes, boxes2) {
 	});
 }
 
-// O(n + m)
+// O(n + m) = O(n)
+// If the loops were nested we would use O(n * m)
+```
+
+For nested loops, we use multiplication instead of addition.
+
+```javascript
+const boxes = ['a', 'b', 'c', 'd', 'e'];
+
+function logAllPairsOfArray(array = []) {
+	for (let i = 0; i < array.length; i++) {
+		for (let j = 0; j < array.length; j++) {
+			console.log(array[i], array[j]);
+		}
+	}
+}
+// O(n * n) = O(n^2) - Quadratic Time Complexity
 ```
 
 ## Resources
